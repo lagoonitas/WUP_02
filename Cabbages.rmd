@@ -55,6 +55,8 @@ basicCN + geom_boxplot()
 ```{r}
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
+
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
@@ -63,6 +65,7 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 favstats(VitC~Cult,data=veggy)
 ```
 
+The cabbages grown with method c39 had a lower average of 51.5 vitamin C levels and the cabbages grown with method c52 have higher average vitamen c levels at 64.4
 ## Inferential Results
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
@@ -75,4 +78,5 @@ The p-value is 0.0000000345
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
-I reject the null hypothesis because the P value is way to low below the threshold. The vitamin C content of the cabbages cultivated with methods c39 and c52 are not signifcantly different enough.
+I reject the null hypothesis because the P value is way to low below the threshold. The vitamin C content of the cabbages cultivated with methods c39 and c52 are significantly different . The graphical descriptive results show that cabbages grown with method c39 have vitamin c levels at 45-55 while cabbages grown with method c52 have higher vitamin levels on average ,at 58-71.The numerical descriptive results show that the average vitamen C levels of cabbages grown with method c39 have and average vitamin C level of 51.5 while the c52 group had an average level of vitamn C at 64.4 .
+
